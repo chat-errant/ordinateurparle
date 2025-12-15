@@ -3,28 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <title>배경 이미지 테스트</title>
+
+  <!-- GitHub Pages 필수 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
+    body {
+      margin: 0;
+    }
 
-body { margin: 0; height: 3553px; width:5377; background-image: url("background.jpg"); background-size: cover; /* 화면 꽉 채우기 */ background-position: center; /* 가운데 정렬 */ background-repeat: no-repeat; }
+    .scene {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
 
+    .bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
+    .hotspot {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      transition: transform 0.2s ease;
+    }
 
+    .hotspot:hover {
+      transform: translate(-50%, -50%) scale(1.05);
+    }
+
+    .hotspot img {
+      display: block;
+      max-width: 100%;
+    }
   </style>
-<link rel="stylesheet" href="./style.css"> 
-</head> 
+
+  <!-- 외부 CSS 있으면 유지 -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
 <body>
   <div class="scene">
-    <img src="background.jpg" class="bg">
+    <img src="./background.jpg" alt="background" class="bg">
 
     <a href="https://example.com"
        class="hotspot"
        style="left:72%; top:56%;">
-      
-      <img src="computer.jpg">
+      <img src="./computer.jpg" alt="computer">
     </a>
   </div>
 
-
-<script src="script.js"></script>
- </body> 
+  <script src="./script.js"></script>
+</body>
 </html>
