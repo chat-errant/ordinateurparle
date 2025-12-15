@@ -10,6 +10,13 @@
   <style>
     body {
       margin: 0;
+      a {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: inline-block; /* 이미지가 아닌 텍스트 링크일 경우 필요 없을 수 있음 */
+}
     }
 
     .scene {
@@ -53,7 +60,14 @@
 
     <a href="https://example.com"
        class="hotspot"
-       style="left:72%; top:56%;">
+       style="left:72%; top:56%;"
+       a {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: inline-block; /* 이미지가 아닌 텍스트 링크일 경우 필요 없을 수 있음 */
+}>
       <img src="./computer.svg" alt="computer">
     </a>
   </div>
