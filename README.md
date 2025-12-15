@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>배경 이미지 테스트</title>
+  <title> </title>
 
-  <!-- GitHub Pages 필수 -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -54,7 +54,7 @@
     <a href="https://example.com"
        class="hotspot"
        style="left:72%; top:56%;">
-      <img src="./computer.jpg" alt="computer">
+      <img src="./computer.svg" alt="computer">
     </a>
   </div>
 
