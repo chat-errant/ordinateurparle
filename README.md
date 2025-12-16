@@ -32,12 +32,14 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      style="display: block; vertical-align: bottom; margin: 0; padding: 0;"
     }
 
     .hotspot {
       position: absolute;
       transform: translate(-50%, -50%);
       transition: transform 0.2s ease;
+      style="display: block; vertical-align: bottom; margin: 0; padding: 0;"
     }
 
     .hotspot:hover {
@@ -47,6 +49,7 @@
     .hotspot img {
       display: block;
       max-width: 100%;
+      style="display: block; vertical-align: bottom; margin: 0; padding: 0;"
     }
   </style>
 
